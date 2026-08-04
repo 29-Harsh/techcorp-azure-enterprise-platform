@@ -1,4 +1,5 @@
 resource "azurerm_resource_group" "rghs" {
-    name = "devrg"
-    location = "japaneast" 
+    for_each = var.rgChild
+    name = each.key
+    location = each.value
 }
