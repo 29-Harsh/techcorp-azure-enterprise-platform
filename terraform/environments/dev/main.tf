@@ -14,3 +14,9 @@ module "subnet" {
   source     = "../../modules/subnet"
   snetChild  = var.snets
 }
+
+module "network_security_group" {
+  depends_on = [module.resource_group]
+  source     = "../../modules/network_security_group"
+  nsgChild   = var.nsgs
+}
