@@ -69,3 +69,10 @@ bastion = {
   }
 }
 
+natGw = {
+  nat1 = {
+    name                = "natGw"
+    location            = "japaneast"
+    resource_group_name = "devrg"
+  }
+}

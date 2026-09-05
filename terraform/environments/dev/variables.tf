@@ -6,3 +6,4 @@ variable "pip" {}
 variable "bastion" {}
 variable "nic" {}
 # variable "vmlinux" {}
+variable "natGw" {}
