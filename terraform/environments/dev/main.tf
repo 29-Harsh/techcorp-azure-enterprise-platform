@@ -39,9 +39,9 @@ module "network_interface_card" {
   nicChild   = var.nic
 }
 
-module "virtual_machine" {
-  depends_on = [module.subnet, module.network_interface_card]
-  source     = "../../modules/virtual_machine"
-  vmChild    = var.vmlinux
-}
+# module "virtual_machine" {
+#   depends_on = [module.subnet, module.network_interface_card]
+#   source     = "../../modules/virtual_machine"
+#   vmChild    = var.vmlinux
+# }
 
