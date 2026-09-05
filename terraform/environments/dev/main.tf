@@ -45,7 +45,7 @@ module "network_interface_card" {
 #   vmChild    = var.vmlinux
 # }
 
-module "nat_gw" {
+module "nat_gateway" {
   depends_on = [module.resource_group]
   source     = "../../modules/nat_gateway"
   natGwChild = var.natGw
