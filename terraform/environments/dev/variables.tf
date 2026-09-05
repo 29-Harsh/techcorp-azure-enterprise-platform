@@ -5,4 +5,4 @@ variable "nsgs" {}
 variable "pip" {}
 variable "bastion" {}
 variable "nic" {}
-variable "vmlinux" {}
+# variable "vmlinux" {}
