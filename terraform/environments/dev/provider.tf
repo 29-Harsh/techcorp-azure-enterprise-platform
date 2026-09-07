@@ -6,6 +6,13 @@ terraform {
 
     }
   }
+
+  backend "azurerm" {
+    resource_group_name  = "rgtest"
+    storage_account_name = "techcorpstorage"
+    container_name       = "devtfstate"
+    key                  = "dev.terraform.tfstate"
+  }
 }
 
 provider "azurerm" {
